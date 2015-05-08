@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>www.Rishsdrivingschool4.co.za</title>
+	</head>
+	<body>
+            <header>
+                <p>DFL - drive at your best</p>
+            </header>
+            <footer>
+                <p id="Date"></p>
+            <script>{
+                var d = new Date();
+                document.getElementById("Date").innerHTML = d;
+             }
+            </script>
+            </footer>
+            <link rel="stylesheet" type="text/css" href="CSS txt file.css">
+            <nav>
+                <li><a href="Website For XP.html">Home</a></li>
+                <li><a href="Website For XP1.html">Branches</a></li>
+                <li><a href="Website For XP2.html">Courses</a></li>
+                <li><a href="Website For XP3.html">Booking</a></li>
+            </nav>
+            <br><br>
+            <form>
+               First Name:<br>
+               <input type="text" name="firstname">
+               <br></br>
+               Last Name: <br>
+               <input type="text" name="lastname">
+               <br></br>
+               Select Courses: <br>
+               <select>
+               <option value="drivers">Drivers License</option>
+               <option value="learner">Learners License</option>
+               </select>
+               <br><br>
+               Choose a Date: <br>
+               <input type="date" name="Date">
+               <br><br>
+               Choose a Time: <br>
+               <input type="time" name="Time">
+               <br><br>
+               Comment:<br>
+               <textarea name='comment' id='comment'></textarea><br>
+               <input type='hidden' name='articleid' id='articleid' value='<? echo $_GET["id"]; ?>'>
+            </form>
+            <aside>
+            <img src="the_stig_wallpaper_by_ileatt-d6es7iq.png" alt="HTML5 Icon" style="width:200px;height:200px">
+            </aside>
+	</body>
+</html>
